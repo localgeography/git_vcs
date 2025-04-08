@@ -44,7 +44,7 @@ penguins %>%
 
 penguins %>% 
   ggplot() +
-  geom_point(aes(x = body_mass_g,
+  geom_line(aes(x = body_mass_g,
                  y = flipper_length_mm,
                  colour = species
                  )) +
@@ -93,3 +93,17 @@ penguins %>%
 
 # to undo last commit of spec file
 # git checkout HEAD~ filename
+
+
+# branching ---------------------------------------------------------------
+
+# for when you wanna work on something 
+# that doesn't nec apply everywhere
+
+# at the end you may want to merge your branch(es) into the main
+
+# git branch -d branchname
+
+# git merge
+  # need to switch to main branch first
+
