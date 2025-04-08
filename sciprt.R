@@ -81,8 +81,15 @@ penguins %>%
 # going back to older versions --------------------------------------------
 
 # but keep the files
-  # the files will go back to being staged
-  # rather than being pushed
+  # the committed files will go back to being staged
   # e.g. you forgot to add a title to the last push
 
 # git reset --soft HEAD~
+
+
+# what if we want to undo the last commit and hard reset?
+# git reset --hard HEAD~
+# use this carefully
+
+# to undo last commit of spec file
+# git checkout HEAD~ filename
