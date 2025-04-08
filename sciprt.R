@@ -45,5 +45,44 @@ penguins %>%
 penguins %>% 
   ggplot() +
   geom_point(aes(x = body_mass_g,
-                 y = flipper_length_mm)) +
-  theme_minimal()
+                 y = flipper_length_mm,
+                 colour = species
+                 )) +
+  theme_minimal() +
+  labs(title = "Plot of the Penguins")
+
+
+# looking at versions -----------------------------------------------------
+
+# use git log to see version numbers
+# use git diff ver1 ver2
+# IN THE TERMINAL
+
+
+# old versions ---------------------------------------------------
+
+# use git log to see versions
+
+# use git show vernum
+  # shows the spec'd ver
+
+# git show HEAD~ filename
+  # show parent v of curr file
+
+# git show head~2 
+  # show grandparent v of curr file
+
+# git show HEAD~n
+  # for n generations ago
+
+# can also use history window on the git pane
+
+
+# going back to older versions --------------------------------------------
+
+# but keep the files
+  # the files will go back to being staged
+  # rather than being pushed
+  # e.g. you forgot to add a title to the last push
+
+# git reset --soft HEAD~
